@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+       
+       
+        background: linear-gradient(to bottom, #1775d377, #FF69B4);
+    }
+    
+    /* Style for the navigation menu */
+    nav {
+        background-color: #0e0e0e;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        padding-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav a {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    nav a:hover {
+        background-color: #555;
+    }
+    
+    /* Style for the content area */
+    .content {
+        margin-left: 200px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #a7954b2a;
+        border-radius: 5px;
+        min-height: 500px;
+    }
+    
+    h1 {
+        font-size: 36px;
+        color: #333;
+        margin-top: 0;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #141313;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+    }
+    .dashboard .main {
+  background-color: #ac1ad8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.dashboard .main .center-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dashboard .main .center-buttons button {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard .main .center-buttons button:hover {
+  background-color: #0062cc;
+}
+
+
+    
+    button:hover {
+        background-color: #3E8E41;
+    }
+    body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvHcXKOpIYffDQR5t41F0XMyUOLoyrsM-xIg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2ccecb6f
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.content {
+    padding: 40px;
+}
+button {
+    background-color: #f44336;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2196f3;
+}
+.sidebar img {
+    animation: moveForward 2s infinite;
+}
+
+@keyframes moveForward {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    200% {
+        transform: translateX(0);
+    }
+}
+
+
+</style>
+</head>
+<body>
+<nav>
+    
+    
+    <a href="account.jsp">Account</a>
+    <a href="cust _support.jsp">Customer Support</a>
+    <a href="logout.jsp">Logout</a>
+    <a href="exit.html">Exit</a>
+</nav>
+<div class="content">
+    <h1>Welcome to the RTO Management System Dashboard</h1>
+    <p>This is the home page of the dashboard, where you can access various features of the system.</p>
+   
+    <div class="dashboard">
+        <div class="sidebar">
+          <!-- Sidebar content -->
+          <img src="https://cdn.dribbble.com/users/2190368/screenshots/4355034/media/b4995708f6d36472978e5775173609cd.gif" alt="Dashboard Image">
+        
+        </div>
+        <div class="center-buttons">
+            <button onclick="location.href='applyLicense.jsp'">Apply For License</button>
+            <button onclick="location.href='getLicense.jsp'">Get License</button>
+          </div>
+       
+      </div>
+     
+      
+</body>
+</html>

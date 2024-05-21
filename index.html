@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTO Management System</title>
+  <style>
+    body {
+      background-image: url('https://content.webengage.com/wp-content/uploads/sites/4/2021/06/D2.gif');
+      background-size: cover;
+      background-position: center center;
+    }
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  width: 400px;
+  background-color: #7409de;
+  border: 1px solid #7409de;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.login-box h2 {
+  margin-top: 0;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box label {
+  font-weight: bold;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.login-box button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.login-box .login-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-box .login-buttons span {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.login-box a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+.sticker {
+  display: inline-block;
+  margin: 20px;
+}
+
+.sticker img {
+  max-width: 200px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+    
+  </style>
+  
+  <div class="container">
+    <div class="login-box">
+      <h2>Login to Your Account</h2>
+      <form action="login.jsp" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+  
+        <div class="login-buttons">
+          <button type="submit">Login</button>
+        </form>
+          <span>or</span>
+          <a href="CreateUserAccount.html">Create New Account</a>
+        </div>
+    </div>
+  </div> 
+</body>
+</html>
